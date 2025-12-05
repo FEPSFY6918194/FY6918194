@@ -162,6 +162,16 @@ Hovering brings its own set of problems. When a helicopter is holding position i
    Conditions become even more extreme when you consider helicopters operating in thin air, like high-altitude environments, on Mars. Pillsbury et al. (2019) describe how the Mars helicopter needs unusually large, extremely lightweight blades that spin at very high speeds to produce enough lift. In these conditions, tiny variations in blade twist, chord length, or density can significantly change performance. Although these issues are most dramatic on Mars, the same principles can be applied on Earth: helicopters become less efficient as air density drops, and hovering requires more power. This general relationship between air density, disk loading and induced power is also outlined in Rotorcraft Aeromechanics (Johnson, 2013).
   </p>
 
+  <!-- Figure 2: Ingenuity Mars Helicopter -->
+  <figure>
+   <img src="ingenuity.png"
+    alt="Ingenuity Mars Helicopter rotor configuration"
+    style="width:80%; max-width:650px; height:auto; display:block; margin:auto;">
+   <figcaption style="text-align:center; margin-top:8px;">     <b>Figure 2.</b> Ingenuity Mars Helicopter rotor design used for flight in low-density Martian atmosphere.
+   </figcaption>
+  </figure>
+
+   
   <h3>Rotor System Types and Specific Aerodynamics Hazards</h3>
   <p>
    There are also some aerodynamic problems that are more specific to certain rotor systems. For example, two-bladed, teetering rotor systems can experience mast-bumping in low-G situations. This happens when the rotor disc becomes unloaded and tilts too far, causing the hub to strike the mast. Although it is mainly a flight mechanics issue, it shows how the rotor always depends on a steady upward flow to remain stable. Bramwell (2001) discusses how rotor design, whether teetering, articulated, or hingeless, influences how the helicopter reacts to disturbances.
@@ -244,6 +254,24 @@ Overall, this article shows that a helicopter’s flight depends on balancing ae
         pp. 1–6.
    </li>
   </ul>
+
+  <script>
+function countWords(text) {
+    return text.trim().split(/\s+/).length;
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    let articleText = document.querySelector("article").innerText;
+    let totalWords = countWords(articleText);
+
+    let countBox = document.createElement("p");
+    countBox.style.fontSize = "12px";
+    countBox.style.color = "grey";
+    countBox.innerHTML = "<b>Total word count (main text only):</b> " + totalWords;
+
+    document.body.appendChild(countBox);
+});
+</script>
 
   
  </body>
