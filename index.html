@@ -1,37 +1,53 @@
 <!DOCTYPE html>
-
 <html>
- 
+
  <head>
- <img src="download.png" alt="Banner" width="900" height="300">
-  <h1>ENG0018 Computer Laboratory 2025/26</h1>
-  <h2>Student URN: 6818194</h2>
- <hr>
- <h2 style="font-family:calibri:"><b>Conference paper: Understanding Rotor Aerodynamics: Lift, Induced Power and Blade Dynamics in Helicopters</b></h2>
- <hr>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device=width, initial-scale-1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  
+  <style>
+  .mySlides {display:none;}
+  </style>
 
-  <!style for tables>
-   <style>
-         table {
-           font-family: arial, sans-serif;
-           border-collapse: collapse;
-           width: 30%;
-         }
+  <!style for everything>
+  <style>
+   body {
+    background-color: #FFFFFF;
+    margin-left: 50px;
+    font-family: Calibri, sans-serif;
+    line-height: 1.5;
+   }
 
-         td, th {
-          border: 1px solid #dddddd;
-          text-align: left;
-          padding: 8px;
-         }
+   h1, h2 {
+    margin-bottom: 5px;
+   }
+   
+   table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 30%;
+   }
+   
+   td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+   }
 
-         tr:nth-child(even) {
-          background-color: #dddddd;
-         }
+   tr:nth-child(even) {
+    background-color: #dddddd;
+   }
 
+   figure {
+    margin-left: 0;
+   }
 
-
+   img.banner {
+    width: 900px;
+    height: 300px;
     
-   </style>
+  </style>
 
   <style>
    p.ex1 {
@@ -40,16 +56,17 @@
   </style>
  </head>
 
+ <body>
+  
+  <img src="download.png" alt="Banner" width="900" height="300">
 
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
- <style>
-  .mySlides {display:none;}
- </style>
+  <h1>ENG0018 Computer Laboratory 2025/26</h1>
+  <h2>Student URN: 6818194</h2>
+  
+  <hr>
+  <h2 style="font-family:calibri:"><b>Conference paper: Understanding Rotor Aerodynamics: Lift, Induced Power and Blade Dynamics in Helicopters</b></h2>
+  <hr>
 
- <body style="background-color:#FFFFFF;margin-left:50px;">
-
-<hr>
   <h3 id="Abstract">Abstract</h3>
   
   <p class="ex1">
@@ -58,7 +75,7 @@
    </pre>
  </p>
 
-  <hr>
+  <!Introduction>
 
   <h3>Introduction</h3>
   <p>
@@ -69,9 +86,12 @@ Hovering brings its own set of problems. When a helicopter is holding position i
 
   <!Figure 1>
   <figure>
-   <img src="" alt="Rotor blade aerodynamics" width="400">
+   <img src="7.png" alt="Rotor blade aerodynamics" width="400">
    <figcaption><b>Figure 1.</b> Diagram showing lift distribution on advancing and retreating rotor blades.</figcaption>
   </figure>
+
+  <!main article>
+
 
   <article>
 
@@ -106,11 +126,35 @@ Hovering brings its own set of problems. When a helicopter is holding position i
   </p>
   </article>
 
-  <h3>Conclusion</h3>
+  <!conclusion>
+
+   <h3>Conclusion</h3>
   <p>
    Helicopter aerodynamics results from the balance between lift production, rotor efficiency, and the limitations caused by complex airflow behaviours. The study of induced flow, blade element loading, and power demands reveals that even minor changes in rotor design or speed can significantly affect overall performance (Seddon 1990). Forward flight adds further challenges, such as lift dissymmetry and retreating-blade stall, requiring helicopters to depend on design solutions such as blade twist, flapping hinges, and swashplate control to remain stable (Bramwell 2001). Research on low-density environments, such as those for the Ingenuity Mars Helicopter, shows how rotor systems must be modified when aerodynamic conditions change, highlighting the rotorcraft’s performance sensitivity to air density and blade aerodynamics (Balaram et al. 2021).
 
 Overall, this article shows that a helicopter’s flight depends on balancing aerodynamic forces, understanding airflow behaviour around the rotor, and designing blades that maximise lift while managing aerodynamic penalties. These principles form the foundation for both traditional helicopter design and future rotorcraft operating in extreme environments.
 
   </p>
+  
+  <h2>References</h2>
+  
+  <ul>
+   <li>
+        Leishman, J.G. (2006) <i>Principles of Helicopter Aerodynamics</i>. 2nd ed. 
+        Cambridge: Cambridge University Press.
+   </li>
+   
+   <li>
+        Ansell, P. and Newman, J. (2011) ‘Aerodynamic challenges of micro air vehicles’, 
+        <i>Journal of Aircraft</i>, 48(3), pp. 698–710.
+   </li>
+   
+   <li>
+        Pounds, P. and Mahony, R. (2005) ‘Small-scale helicopter dynamics and control’, 
+        Proceedings of the <i>2005 Australasian Conference on Robotics and Automation (ACRA)</i>, 
+        pp. 1–6.
+   </li>
+  </ul>
+ 
+ </body>
 </html>
